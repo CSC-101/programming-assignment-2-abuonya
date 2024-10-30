@@ -66,8 +66,9 @@ def song_shorter_than(songs: list[Song], song_length: Duration) -> list:
     # Function Name: valid_route
     # input: a list of city links, a list of city names (that user wants to pass through)
     # output: a boolean determining if the route is valid (true/false)
-    # If I were a computer...uhummmmmm
+    # If I were a computer...
 def valid_route(city_links: list[list[str]], city_list: list[str]) -> bool:
+
 
 
 
