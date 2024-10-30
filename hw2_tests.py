@@ -12,7 +12,14 @@ class TestCases(unittest.TestCase):
         point1 = Point(2,5)
         point2 = Point(7,12)
         result = hw2.create_rectangle(point1, point2)
-        expected = Rectangle((2,12),(7,5))
+        expected = Rectangle(Point(2,12), Point(7,5))
+        self.assertEqual(expected, result)
+
+    def test_create_rectangle2(self):
+        point1 = Point(2,2)
+        point2 = Point(10,10)
+        result = hw2.create_rectangle(point1, point2)
+        expected = Rectangle(Point(2,10), Point(10,2))
         self.assertEqual(expected, result)
 
     # Part 2

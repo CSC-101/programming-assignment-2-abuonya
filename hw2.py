@@ -10,6 +10,7 @@ from data import Rectangle
     # Function Name: create_rectangle
     # input: Two different points of a rectangle
     # output: string representation of class Rectangle
+    # If I were a computer...just swap the x/y coordinates!
 def create_rectangle(topright: Point, bottomleft: Point) -> str:
     x_coordinate = topright.x
     print(x_coordinate)
@@ -22,6 +23,11 @@ def create_rectangle(topright: Point, bottomleft: Point) -> str:
     # Find the bottom right coordinate
     bottom_right_x = bottomleft.x
     bottom_right_y = topright.y
+    bottom_right = Point(bottom_right_x, bottom_right_y)
+
+    # output the rectangle
+    print (Rectangle(top_left, bottom_right))
+    return Rectangle(top_left, bottom_right)
 
 
 
