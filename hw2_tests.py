@@ -8,7 +8,7 @@ from data import Rectangle
 
 class TestCases(unittest.TestCase):
     # Part 1
-    def test_create_rectangle(self):
+    def test_create_rectangle1(self):
         point1 = Point(2,5)
         point2 = Point(7,12)
         result = hw2.create_rectangle(point1, point2)
