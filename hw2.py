@@ -12,6 +12,7 @@ def create_rectangle(topright: Point, bottomleft: Point) -> int:
 
 
 
+
 # Part 2
 
 
