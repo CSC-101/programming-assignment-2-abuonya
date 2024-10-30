@@ -56,9 +56,7 @@ def song_shorter_than(songs: list[Song], song_length: Duration) -> list:
     for song in songs:
         if song.duration.minutes < song_length.minutes:
             new_songlist.append(song)
-            print(new_songlist)
-    else:
-        return new_songlist
+    return new_songlist
 
 # Part 4
 

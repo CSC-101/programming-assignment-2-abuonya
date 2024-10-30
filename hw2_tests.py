@@ -52,7 +52,18 @@ class TestCases(unittest.TestCase):
         length_of_song = Duration(4,10)
         list_of_songs = [song1, song2]
         result = hw2.song_shorter_than(list_of_songs, length_of_song)
-        expected = [song1]
+        expected = [song2]
+        self.assertEqual(expected, result)
+
+    def test_songs_shorter_than2(self):
+        song1 = Song('Example1','SongTitle1', Duration(5,30))
+        song2 = Song('Example2','SongTitle2', Duration(2,30))
+        song3 = Song('Example3', 'SongTitle3', Duration(1, 43))
+        song4 = Song('Example4', 'SongTitle4', Duration(0, 43))
+        length_of_song = Duration(4,10)
+        list_of_songs = [song1, song2, song3, song4]
+        result = hw2.song_shorter_than(list_of_songs, length_of_song)
+        expected = [song2, song3, song4]
         self.assertEqual(expected, result)
 
 
