@@ -1,8 +1,15 @@
 import data
+from data import Point
+from data import Rectangle
+
 
 # Write your functions for each part in the space below.
 
 # Part 1
+def create_rectangle(topright: Point, bottomleft: Point) -> int:
+
+
+
 
 
 # Part 2

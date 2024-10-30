@@ -7,6 +7,7 @@ import unittest
 
 class TestCases(unittest.TestCase):
     # Part 1
+    def test_create_rectangle(self):
 
 
     # Part 2
