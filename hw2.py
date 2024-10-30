@@ -49,8 +49,7 @@ def shorter_duration_than(duration1: Duration, duration2: Duration) -> bool:
     # Function Name: songs_shorter_than
     # input: list from class Song list[Song] and one parameter of duration
     # output: a list of strings
-    # If I were a computer...take list of songs, create a for loop that checks the durations of each song in the list and compares
-    # if its less than the provided duration. If it is, append it to a new list of songs. Return the new list when it is done.
+    # If I were a computer...take list of songs, create a for loop that checks the durations of each song in the list and compares if its less than the provided duration. If it is, append it to a new list of songs. Return the new list when it is done.
 def song_shorter_than(songs: list[Song], song_length: Duration) -> list:
     new_songlist = []
     for song in songs:
@@ -61,7 +60,15 @@ def song_shorter_than(songs: list[Song], song_length: Duration) -> list:
 # Part 4
 
 
+
 # Part 5
+    # Purpose: find if a route is valid by passing through each intermediate city and seeing if they cross one another.
+    # Function Name: valid_route
+    # input: a list of city links, a list of city names (that user wants to pass through)
+    # output: a boolean determining if the route is valid (true/false)
+    # If I were a computer...uhummmmmm
+def valid_route(city_links: list[list[str]], city_list: list[str]) -> bool:
+
 
 
 # Part 6
