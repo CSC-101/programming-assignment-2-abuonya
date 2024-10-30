@@ -4,6 +4,7 @@ import unittest
 from data import Point
 from data import Rectangle
 from data import Duration
+from data import Song
 
 # Write your test cases for each part below.
 
@@ -45,6 +46,14 @@ class TestCases(unittest.TestCase):
         expected = False
         self.assertEqual(expected, result)
     # Part 3
+    def test_songs_shorter_than1(self):
+        song1 = Song('Example1','SongTitle1', Duration(5,30))
+        song2 = Song('Example2','SongTitle2', Duration(2,30))
+        length_of_song = Duration(4,10)
+        list_of_songs = [song1, song2]
+        result = hw2.song_shorter_than(list_of_songs, length_of_song)
+        expected = [song1]
+        self.assertEqual(expected, result)
 
 
     # Part 4

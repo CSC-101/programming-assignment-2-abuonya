@@ -2,6 +2,7 @@ import data
 from data import Point
 from data import Rectangle
 from data import Duration
+from data import Song
 
 
 # Write your functions for each part in the space below.
@@ -44,7 +45,19 @@ def shorter_duration_than(duration1: Duration, duration2: Duration) -> bool:
         return False
 
 # Part 3
-
+    # Purpose: Find a list of all songs with a duration less than the provided duration parameter.
+    # Function Name: songs_shorter_than
+    # input: list from class Song list[Song] and one parameter of duration
+    # output: a list of strings
+    # If I were a computer...take list of songs, create a for loop that checks the durations of each song in the list and compares
+    # if its less than the provided duration. If it is, append it to a new list of songs. Return the new list when it is done.
+def song_shorter_than(songs: list[Song], song_length: Duration) -> list:
+    new_songlist = []
+    for idx in songs:
+        if songs.duration < song_length:
+            new_songlist.append[idx]
+    else:
+        return new_songlist
 
 # Part 4
 
