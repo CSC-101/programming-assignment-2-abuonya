@@ -3,6 +3,7 @@ import hw2
 import unittest
 from data import Point
 from data import Rectangle
+from data import Duration
 
 # Write your test cases for each part below.
 
@@ -23,8 +24,26 @@ class TestCases(unittest.TestCase):
         self.assertEqual(expected, result)
 
     # Part 2
+    def test_shorter_duration_than1(self):
+        duration1 = Duration(6,60)
+        duration2 = Duration(10,30)
+        result = hw2.shorter_duration_than(duration1, duration2)
+        expected = True
+        self.assertEqual(expected, result)
 
+    def test_shorter_duration_than2(self):
+        duration1 = Duration(15,60)
+        duration2 = Duration(10,30)
+        result = hw2.shorter_duration_than(duration1, duration2)
+        expected = False
+        self.assertEqual(expected, result)
 
+    def test_shorter_duration_than3(self):
+        duration1 = Duration(15, 60)
+        duration2 = Duration(0, 30)
+        result = hw2.shorter_duration_than(duration1, duration2)
+        expected = False
+        self.assertEqual(expected, result)
     # Part 3
 
 

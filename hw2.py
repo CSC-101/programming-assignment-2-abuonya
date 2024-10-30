@@ -38,8 +38,10 @@ def shorter_duration_than(duration1: Duration, duration2: Duration) -> bool:
     duration1_in_seconds = (duration1.minutes * 60) + duration1.seconds
     duration2_in_seconds = (duration2.minutes * 60) + duration2.seconds
 
-
-
+    if duration1_in_seconds < duration2_in_seconds:
+        return True
+    else:
+        return False
 
 # Part 3
 
