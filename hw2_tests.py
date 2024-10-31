@@ -93,6 +93,11 @@ class TestCases(unittest.TestCase):
         self.assertEqual(expected, result)
 
     # Part 6
+    def test_longest_repetition1(self):
+        list_of_integers = [1,2,3,4,4,4,4,4,4]
+        result = hw2.longest_repetition(list_of_integers)
+        expected = [3]
+        self.assertEqual(expected, result)
 
 
 

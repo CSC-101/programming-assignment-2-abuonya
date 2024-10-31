@@ -71,7 +71,6 @@ def song_shorter_than(songs: list[Song], song_length: Duration) -> list:
 
 
 def valid_route(city_links: list[list[str]], city_routes: list[str]) -> bool:
-    test_list = []
     for i in range(len(city_routes) - 1):
         temp = [city_routes[i], city_routes[i+1]]
         temp2 = [city_routes[i+1], city_routes[i]]
@@ -81,11 +80,21 @@ def valid_route(city_links: list[list[str]], city_routes: list[str]) -> bool:
 
     return False
 
-
-
-
-
-
-
-
 # Part 6
+    # Purpose: takes a list of integers and finds the longest reptition of a single number.
+    # Function Name: longest_reptition
+    # input: a list of integers --> list[int]
+    # output: returns an index or None
+    # example input = 12344444      output:[3]
+    # If I were a computer...compare each index in the list; if index == the next index, count that as one reptition. If not,
+    # continue to next index and compare that its neighboring index.
+    # If multiple reptitions, store only the highest value.
+
+def longest_repetition(integers: list[int]) -> int:
+    occurences = 0
+
+    for x in integers:
+        if x == integers[x]:
+            occurences += 1
+
+
