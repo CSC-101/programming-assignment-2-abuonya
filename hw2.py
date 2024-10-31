@@ -93,8 +93,8 @@ def valid_route(city_links: list[list[str]], city_routes: list[str]) -> bool:
 def longest_repetition(integers: list[int]) -> int:
     occurences = 0
 
-    for x in integers:
-        if x == integers[x]:
+    for x in range(len(integers) - 1):
+        if integers[x] == integers[x - 1]:
             occurences += 1
 
 
