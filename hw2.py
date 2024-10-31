@@ -76,6 +76,9 @@ def running_time(songs: list[Song], playlist: list[int] ) -> Duration:
             sum_of_seconds += songs[x].duration.seconds
             sum_of_minutes += songs[x].duration.minutes
 
+    sum_of_minutes += sum_of_seconds // 60
+    sum_of_seconds = sum_of_seconds % 60
+
     return Duration(sum_of_minutes, sum_of_seconds)
 
 
