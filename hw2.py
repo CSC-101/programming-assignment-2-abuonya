@@ -71,6 +71,7 @@ def song_shorter_than(songs: list[Song], song_length: Duration) -> list:
 
 
 def valid_route(city_links: list[list[str]], city_routes: list[str]) -> bool:
+    test_list = []
     for i in range(len(city_routes) - 1):
         temp = [city_routes[i], city_routes[i+1]]
         temp2 = [city_routes[i+1], city_routes[i]]

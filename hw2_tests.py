@@ -78,6 +78,20 @@ class TestCases(unittest.TestCase):
         expected = False
         self.assertEqual(expected, result)
 
+    def test_valid_route2(self):
+        city_links = [['san luis obispo', 'santa margarita'], ['san luis obispo', 'pismo beach'], ['atascadero', 'santa margarita'], ['atascadero', 'creston']]
+        city_routes = ['creston', 'atascadero', 'santa margarita', 'pismo beach']
+        result = hw2.valid_route(city_links, city_routes)
+        expected = False
+        self.assertEqual(expected, result)
+
+    def test_valid_route3(self):
+        city_links = [['san luis obispo', 'santa margarita'], ['san luis obispo', 'pismo beach'], ['atascadero', 'santa margarita'], ['atascadero', 'creston']]
+        city_routes = ['san luis obispo', 'santa margarita']
+        result = hw2.valid_route(city_links, city_routes)
+        expected = False
+        self.assertEqual(expected, result)
+
     # Part 6
 
 
