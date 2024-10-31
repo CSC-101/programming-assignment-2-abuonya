@@ -59,6 +59,15 @@ def song_shorter_than(songs: list[Song], song_length: Duration) -> list:
     return new_songlist
 
 # Part 4
+    # Purpose: takes a list of songs and a list of integers and returns a duration object with the total running time given the playlist.
+    # Function Name: running_time
+    # input: a list of integers and list of Songs
+    # output: returns an duration object that shows that total time of playlist
+    # If I were a computer...iterate through the playlist, add all their durations for each song, and then return the total
+    # duration as a duration object.
+
+def running_time(songs: list[Song], playlist: list[int] ) -> Duration:
+    for x in playlist:
 
 
 
