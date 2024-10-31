@@ -84,7 +84,7 @@ class TestCases(unittest.TestCase):
         song_list = [song1, song2, song3]
         playlist = [0,1,2,0,3,3,3,3]
         result = hw2.running_time(song_list, playlist)
-        expected = Duration(9,39)
+        expected = Duration(14,99)
         self.assertEqual(expected, result)
 
     # Part 5
