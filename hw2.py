@@ -3,6 +3,7 @@ from data import Point
 from data import Rectangle
 from data import Duration
 from data import Song
+from typing import Optional
 
 
 # Write your functions for each part in the space below.
@@ -90,14 +91,18 @@ def valid_route(city_links: list[list[str]], city_routes: list[str]) -> bool:
     # continue to next index and compare that its neighboring index.
     # If multiple reptitions, store only the highest value.
 
-def longest_repetition(integers: list[int]) -> int:
-    occurences = 0
-
+def longest_repetition(integers: list[int]) -> Optional[int]:
+    new_occurences = 0
+    start_occurence = 1 # every number shows up at least once, so start at 1
+    new_index = 0
+    start_index = 0
 
     # counting occurances for any repeating number
     for x in range(len(integers) - 1):
         if integers[x] == integers[x - 1]:
             occurences += 1
-        # find
+        # compare values after loop is done
+
+
 
 
