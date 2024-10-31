@@ -102,8 +102,15 @@ class TestCases(unittest.TestCase):
     def test_longest_repetition2(self):
         list_of_integers = [1,2,3,4,4,4,4,4,4,5,6,7,9,99,99,99,99,99,99,99,99,99,100]
         result = hw2.longest_repetition(list_of_integers)
-        expected = [13]
+        expected = 13
         self.assertEqual(expected, result)
+
+    def test_longest_repetition3(self):
+        list_of_integers = []
+        result = hw2.longest_repetition(list_of_integers)
+        expected = None
+        self.assertEqual(expected, result)
+
 
 
 
