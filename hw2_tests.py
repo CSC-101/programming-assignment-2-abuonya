@@ -77,6 +77,16 @@ class TestCases(unittest.TestCase):
         expected = Duration(7,59)
         self.assertEqual(expected, result)
 
+    def test_running_time2(self):
+        song1 = Song('Reality Club', 'Is It The Answer', Duration(4, 30))
+        song2 = Song('Phum', 'LoverBoy', Duration(3, 29))
+        song3 = Song('Locked Out of Heaven', 'Bruno Mars', Duration(3, 10))
+        song_list = [song1, song2, song3]
+        playlist = [0,1,2,0,3,3,3,3]
+        result = hw2.running_time(song_list, playlist)
+        expected = Duration(9,39)
+        self.assertEqual(expected, result)
+
     # Part 5
     def test_valid_route1(self):
         city_links = [['san luis obispo', 'santa margarita'], ['san luis obispo', 'pismo beach'], ['atascadero', 'santa margarita'], ['atascadero', 'creston']]
