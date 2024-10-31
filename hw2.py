@@ -92,7 +92,7 @@ def valid_route(city_links: list[list[str]], city_routes: list[str]) -> bool:
     # If multiple reptitions, store only the highest value.
 
 def longest_repetition(integers: list[int]) -> Optional[int]:
-    new_occurences = 0
+    new_occurence = 0
     start_occurence = 1 # every number shows up at least once, so start at 1
     new_index = 0
     start_index = 0
@@ -102,6 +102,14 @@ def longest_repetition(integers: list[int]) -> Optional[int]:
         if integers[x] == integers[x - 1]:
             occurences += 1
         # compare values after loop is done
+        if new_occurence > start_occurence:
+            start_occurence = new_occurence
+            new_index = start_index
+
+        new_occcurence = 1
+        new_index = x
+
+    return
 
 
 
