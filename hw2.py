@@ -67,17 +67,22 @@ def song_shorter_than(songs: list[Song], song_length: Duration) -> list:
     # input: a list of city links, a list of city names (that user wants to pass through)
     # output: a boolean determining if the route is valid (true/false)
     # example input = ['san luis obispo', 'santa margarita'] output: True
-    # If I were a computer...create a new list that can compare the city links directly (so i don't have to manually do it) and loop through the provided
-    # route list, checking if city link exists in the city links list.
+    # If I were a computer...loop through the provided route list, checking if city link exists in the city links list. Must check for reverse and normal routes, too.
 
- city_links = [['san luis obispo', 'santa margarita'],['san luis obispo', 'pismo beach'], ['atascadero', 'santa margarita'],['atascadero', 'creston']]
 
 def valid_route(city_links: list[list[str]], city_routes: list[str]) -> bool:
-    new_city_links = []
+    for i in range(len(city_routes) - 1):
+        temp = [city_routes[i], city_routes[i+1]]
+        temp2 = [city_routes[i+1], city_routes[i]]
 
-    # Add city links directly
+        if temp in city_links and temp2 in city_links:
+            return True
 
-wait city links is already a  list
+    return False
+
+
+
+
 
 
 
